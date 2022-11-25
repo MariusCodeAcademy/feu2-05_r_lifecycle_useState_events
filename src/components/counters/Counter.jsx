@@ -18,11 +18,10 @@ function Counter() {
     setCounterValue((prevCounterValue) => {
       return prevCounterValue + 1;
     });
+  }
 
-    // pasitikirinti reiksme ar daugiau uz 5 jei taip, pridedam klase
-    // if (counterValue >= 4) {
-    // setCounterClass('high');
-    // }
+  function decrementHandler() {
+    setCounterValue((prevValue) => prevValue - 1);
   }
 
   // let reiksme = 10;
@@ -37,7 +36,8 @@ function Counter() {
       <h2 className={`counter__value ${counterClassInfered}`}>{counterValue}</h2>
       <div className='control'>
         <button onClick={incrementHandler}>+</button>
-        <button>-</button>
+        <button onClick={() => setCounterValue(0)}>reset</button>
+        <button onClick={decrementHandler}>-</button>
       </div>
     </div>
   );
