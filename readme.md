@@ -21,3 +21,10 @@
 3. padaryti kad paspaudus elementa consoleje atsispausdintu jo id
 4. padaryti kad paspaudus ant elemnto jis isitrintu is saraso (atnaujinti masyva su visais elementais isskyrus ta ant kurio paspausta.)
 5. Prideti mygtuka kuri paspaudus visi useriai tampa didziosiomis raidemis parasyti.
+
+## counteris laiko skaiciavimui
+
+1. nuoroda https://prnt.sc/FWP_09Y7AzAO
+2. padaryti komponentas TimeUntil, kuriam padavus datos prop, jis skaciuotu kiek liko dienu valandu ir minuciu iki to ivykio
+   1. pradziai pasidaryti be daug stiliaus, 
+   2. kai veikia prideti stiliu.
