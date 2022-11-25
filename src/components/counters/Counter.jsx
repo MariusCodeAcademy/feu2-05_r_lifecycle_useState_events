@@ -10,9 +10,10 @@ function Counter() {
   // 2. increaseHandler, decreaseHandler fn kurios didins ir mazins skaitliuka
   function incrementHandler() {
     setCounterValue((prevCounterValue) => {
-      // pasitikirinti reiksme ar daugiau uz 5 jei taip, pridedam klase
       return prevCounterValue + 1;
     });
+
+    // pasitikirinti reiksme ar daugiau uz 5 jei taip, pridedam klase
   }
 
   // let reiksme = 10;
