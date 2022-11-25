@@ -21,7 +21,7 @@ function App() {
       {/* <Counter /> */}
 
       {!showUsers && <Counter>Push ups</Counter>}
-      <Counter />
+      <Counter initValue='40' />
       {showUsers && <Users />}
     </div>
   );

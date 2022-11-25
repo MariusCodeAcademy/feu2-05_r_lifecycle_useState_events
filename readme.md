@@ -11,8 +11,9 @@
    1. jei nera reiksmes tarp pradzios ir pabaigos tagu, tai palieka tiesiog antraste buna 'Couter'
 6. Sukurti CounterList komponeta, sugeneruoti jame 3 Couter komponentus ir paziureti kaip jie veikia
 7. prideti Counter +10 mygtuka kuri padidina counter reiksme 10cia.
+8. `<Counter initValue='40' />` padaryti kad jei yra initValue ji butu panaudota kaip pradine reiksme, jei nera tai 0 pradine reiksme
 
-8. CounterList elemente generuoti 3 Counterius is masyvo
+9. CounterList elemente generuoti 3 Counterius is masyvo
 
 ## Users
 
@@ -30,3 +31,8 @@ https://droitthemes.com/html/saasland/home-event.html
 2. padaryti komponentas TimeUntil, kuriam padavus datos prop, jis skaciuotu kiek liko dienu valandu ir minuciu iki to ivykio
    1. pradziai pasidaryti be daug stiliaus, 
    2. kai veikia prideti stiliu.
+
+
+## BOOOM komponentas 
+
+1. `<CountBoom start='5' />`  sukurti komponenta kuri skaiciuotu zemyn nuo start reiksmes kas sekunde h2 elmente. Kai reiksme pasiekia 0 vietoje jo parasom 'BOOOM' ir isvalom intervala
