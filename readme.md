@@ -11,3 +11,13 @@
    1. jei nera reiksmes tarp pradzios ir pabaigos tagu, tai palieka tiesiog antraste buna 'Couter'
 6. Sukurti CounterList komponeta, sugeneruoti jame 3 Couter komponentus ir paziureti kaip jie veikia
 7. prideti Counter +10 mygtuka kuri padidina counter reiksme 10cia.
+
+8. CounterList elemente generuoti 3 Counterius is masyvo
+
+## Users
+
+1. prideti pavarde prie saraso atvaizdavimo
+2. prideti hoverio efekta ant kiekvieno li elemento
+3. padaryti kad paspaudus elementa consoleje atsispausdintu jo id
+4. padaryti kad paspaudus ant elemnto jis isitrintu is saraso (atnaujinti masyva su visais elementais isskyrus ta ant kurio paspausta.)
+5. Prideti mygtuka kuri paspaudus visi useriai tampa didziosiomis raidemis parasyti.
