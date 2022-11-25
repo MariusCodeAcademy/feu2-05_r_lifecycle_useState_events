@@ -31,6 +31,11 @@ function Users() {
   // toks useEffektas pasileis viena karta susikurus komponentui, ir pasikeitus usersArr reiksmei
   // useEffect(() => {}, [usersArr]);
   console.log('just be4 return of JSX');
+
+  function deleteHandler() {
+    console.log('delete');
+  }
+
   return (
     <div>
       <h2>Users from db</h2>
@@ -38,7 +43,9 @@ function Users() {
 
       <ul>
         {usersArr.map((uObj) => (
-          <li key={uObj.id}>{uObj.firstName}</li>
+          <li onClick={() => deleteHandler(uObj.id)} key={uObj.id}>
+            {uObj.firstName}
+          </li>
         ))}
       </ul>
     </div>

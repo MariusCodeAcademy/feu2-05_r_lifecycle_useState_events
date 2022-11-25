@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 
+function addZero(num) {
+  return num.toString().padStart(2, 0);
+}
+
 function Clock() {
   const [timeObj, setTimeObj] = useState(new Date());
 
@@ -20,7 +24,7 @@ function Clock() {
 
   return (
     <h2 className='card'>
-      {hours}:{min}:{sec}
+      {addZero(hours)}:{min}:{addZero(sec)}
     </h2>
   );
 }

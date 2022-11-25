@@ -8,7 +8,7 @@ import Clock from './components/Clock';
 
 function App() {
   console.log('App.jsx created');
-  const [showUsers, setShowUsers] = useState(false);
+  const [showUsers, setShowUsers] = useState(true);
 
   // paspaudus an h1 el, padidini jo dydi iki 2rem
   return (
