@@ -24,6 +24,8 @@
 
 ## counteris laiko skaiciavimui
 
+https://droitthemes.com/html/saasland/home-event.html
+
 1. nuoroda https://prnt.sc/FWP_09Y7AzAO
 2. padaryti komponentas TimeUntil, kuriam padavus datos prop, jis skaciuotu kiek liko dienu valandu ir minuciu iki to ivykio
    1. pradziai pasidaryti be daug stiliaus, 
