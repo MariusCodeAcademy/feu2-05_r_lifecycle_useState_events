@@ -8,12 +8,15 @@ function Title(props) {
   // !!!! niekada neprilyginti toShowState kazkam su '='
   const [toShowState, setToShowState] = useState(true);
   // panaudojau setToShowState fn kad pakeisti toShowState reiksme i false
-  // setToShowState(false);
+  // setToShowState(false); // pergeneruoja visa kompinenta is naujo
 
   function titleHideHandler() {
     console.log('titleHideHandler');
     setToShowState(false);
   }
+
+  // paspaudus mygtuka keisti toShowState is true i false ir atvirksciai
+  // apsirasyti toggleTitleHandler
 
   return (
     <div>
