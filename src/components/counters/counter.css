@@ -11,3 +11,7 @@
 .counter__value {
   font-size: 3rem;
 }
+
+.high {
+  color: green;
+}
