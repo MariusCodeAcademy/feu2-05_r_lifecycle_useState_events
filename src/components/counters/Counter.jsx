@@ -5,6 +5,12 @@ function Counter() {
   // 1. state counterValue, useState
   const [counterValue, setCounterValue] = useState(0);
   // susikurti counterClass state
+  // const [counterClass, setCounterClass] = useState('');
+
+  // kai turim reiksme kuri tiesiogiai priklauso nuo kitos reiksme, galim naudoti
+  // infered/caclulated value
+  let counterClassInfered = counterValue >= 5 ? 'high' : '';
+
   // const counterValue = stateArr[0];
   // const setCounterValue = stateArr[1];
   // 2. increaseHandler, decreaseHandler fn kurios didins ir mazins skaitliuka
@@ -14,6 +20,9 @@ function Counter() {
     });
 
     // pasitikirinti reiksme ar daugiau uz 5 jei taip, pridedam klase
+    // if (counterValue >= 4) {
+    // setCounterClass('high');
+    // }
   }
 
   // let reiksme = 10;
@@ -25,7 +34,7 @@ function Counter() {
   return (
     <div className='counter card'>
       <h3>Counter</h3>
-      <h2 className='counter__value '>{counterValue}</h2>
+      <h2 className={`counter__value ${counterClassInfered}`}>{counterValue}</h2>
       <div className='control'>
         <button onClick={incrementHandler}>+</button>
         <button>-</button>
