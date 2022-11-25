@@ -33,7 +33,9 @@ function Counter() {
   return (
     <div className='counter card'>
       <h3>Counter</h3>
-      <h2 className={`counter__value ${counterClassInfered}`}>{counterValue}</h2>
+      <h2 className={`counter__value ${counterClassInfered} ${counterValue < 0 ? 'low' : ''}`}>
+        {counterValue}
+      </h2>
       <div className='control'>
         <button onClick={incrementHandler}>+</button>
         <button onClick={() => setCounterValue(0)}>reset</button>
