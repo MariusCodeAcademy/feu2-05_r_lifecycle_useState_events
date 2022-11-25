@@ -28,9 +28,15 @@ function App() {
     });
   }
 
+  function resetSize() {
+    setH1Size('2rem');
+  }
+
   // paspaudus an h1 el, padidini jo dydi iki 2rem
   return (
     <div className='App'>
+      {/* grazinti h1 dydi i 2rem */}
+      <button onClick={resetSize}>reset</button>
       <h1 onClick={increaseTitleSizeHandler} style={{ fontSize: h1Size }}>
         Lifecycle
       </h1>
