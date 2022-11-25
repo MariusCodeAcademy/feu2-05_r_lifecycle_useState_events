@@ -11,9 +11,10 @@ function App() {
   return (
     <div className='App container'>
       <MainTitle />
-      {/* <Counter /> */}
+      <Counter />
+      <Counter>Push ups</Counter>
       {/* <Title>Events and Hooks</Title> */}
-      <Users />
+      {/* <Users /> */}
     </div>
   );
 }
