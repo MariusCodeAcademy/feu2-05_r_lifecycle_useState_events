@@ -8,7 +8,7 @@ import Clock from './components/Clock';
 
 function App() {
   console.log('App.jsx created');
-  const [showUsers, setShowUsers] = useState(true);
+  const [showUsers, setShowUsers] = useState(false);
 
   // paspaudus an h1 el, padidini jo dydi iki 2rem
   return (
@@ -20,7 +20,8 @@ function App() {
       {/* <Title>Events and Hooks</Title> */}
       {/* <Counter /> */}
 
-      {!showUsers && <Counter />}
+      {!showUsers && <Counter>Push ups</Counter>}
+      <Counter />
       {showUsers && <Users />}
     </div>
   );

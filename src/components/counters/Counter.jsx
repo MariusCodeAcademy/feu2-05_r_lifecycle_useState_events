@@ -1,7 +1,7 @@
 import './counter.css';
 import { useState } from 'react';
 
-function Counter() {
+function Counter(props) {
   // 1. state counterValue, useState
   const [counterValue, setCounterValue] = useState(0);
   // susikurti counterClass state
@@ -34,7 +34,8 @@ function Counter() {
 
   return (
     <div className='counter card'>
-      <h3>Counter</h3>
+      {/* <h3>{props.children ? props.children : 'Counter'}</h3> */}
+      <h3>{props.children || 'Counter'}</h3>
       <h2 className={`counter__value ${counterClassInfered} ${counterValue < 0 ? 'low' : ''}`}>
         {counterValue}
       </h2>
