@@ -22,6 +22,10 @@ function Users() {
   useEffect(() => {
     console.log('startup use Effect ran');
     getUsers();
+    // useEffect return fn pasileidzia kai sunaikinamas komponentas.
+    return () => {
+      console.log('cleanUp getUsers');
+    };
   }, []);
 
   // toks useEffektas pasileis viena karta susikurus komponentui, ir pasikeitus usersArr reiksmei
