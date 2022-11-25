@@ -21,6 +21,8 @@ function Counter() {
   }
 
   function decrementHandler() {
+    // jei sk lygus 0 nutraukiam fn vygdyma
+    if (counterValue === 0) return;
     setCounterValue((prevValue) => prevValue - 1);
   }
 
@@ -39,7 +41,11 @@ function Counter() {
       <div className='control'>
         <button onClick={incrementHandler}>+</button>
         <button onClick={() => setCounterValue(0)}>reset</button>
-        <button onClick={decrementHandler}>-</button>
+        {counterValue > 0 && (
+          <button disabled={counterValue === 0} onClick={decrementHandler}>
+            -
+          </button>
+        )}
       </div>
     </div>
   );
