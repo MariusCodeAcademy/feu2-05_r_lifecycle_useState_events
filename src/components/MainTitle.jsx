@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 function MainTitle() {
   const [h1Size, setH1Size] = useState('1rem');
   // const h1Size = '1rem'
@@ -28,13 +28,13 @@ function MainTitle() {
   }
 
   return (
-    <div>
+    <>
       {/* grazinti h1 dydi i 2rem */}
       <button onClick={resetSize}>reset</button>
       <h1 onClick={increaseTitleSizeHandler} style={{ fontSize: h1Size }}>
         Lifecycle
       </h1>
-    </div>
+    </>
   );
 }
 
