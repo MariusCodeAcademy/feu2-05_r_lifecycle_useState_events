@@ -12,7 +12,7 @@ function App() {
     <div className='App container'>
       <MainTitle />
       <Counter />
-      <Counter>Push ups</Counter>
+
       {/* <Title>Events and Hooks</Title> */}
       {/* <Users /> */}
     </div>
