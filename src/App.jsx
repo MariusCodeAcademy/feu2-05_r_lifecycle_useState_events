@@ -13,7 +13,7 @@ function App() {
   // paspaudus an h1 el, padidini jo dydi iki 2rem
   return (
     <div className='App container'>
-      <Clock />
+      {!showUsers && <Clock />}
       <button onClick={() => setShowUsers(!showUsers)}>toggle Users</button>
       <MainTitle />
 
